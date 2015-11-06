@@ -126,7 +126,6 @@ var testunit = function () {
         app.loadJs('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', jsAnimation);
     });
 
-
     var  bannerload = function() {
         app.contentTag.innerHTML =
             '<div class="container"> \
@@ -134,14 +133,8 @@ var testunit = function () {
             <img id="redux" class="canv" src="' + app.path + 'img/men-line.png" /> \
             </div> \
             <img class="men-line2" src="' + app.path + 'img/men-line3.png" alt=""> \
-            <div class="smoke"> \
-            <div class="s1"></div> \
-            <div class="s2"></div> \
-            <div class="s3"></div> \
-            <div class="s4"></div> \
-            <div class="s1"></div> \
-            <div class="s2"></div> \
-            <div class="s3"></div> \
+            <div class="smoke2"> \
+            <img src="' + app.path + 'img/psmoke.png" alt="">\
             </div> \
             <div class="hand"> \
             <img src="' + app.path + 'img/hand.png" alt=""> \
@@ -149,10 +142,7 @@ var testunit = function () {
             <div class="dew"> \
             <img src="' + app.path + 'img/dew-bottle.png" alt=""/> \
             </div> \
-            <div class="ray"> \
-            <img src="' + app.path + 'img/ray.png" alt=""/> \
-            </div> \
-            <div class="text-block"> \
+             <div class="text-block"> \
             <img src="' + app.path + 'img/swipe-text.png" alt=""/> \
             </div> \
             <div class="halk0"> \

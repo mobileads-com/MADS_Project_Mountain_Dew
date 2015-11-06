@@ -3,13 +3,14 @@ body {
     height: 480px;
     margin: 0;
     padding: 0;
+    font-family: "Dax Medium";
     overflow: hidden;
 }
-
 body:after {
-    content: url('../img/bg.jpg') url('../img/bg2.jpg') url('../img/bottom-dew.png') url('../img/button.png') url('../img/dew-bottle.png') url('../img/halk.png') url('../img/hand.png') url('../img/men-line.png') url('../img/men-line3.png') url('../img/middle-dew.png') url('../img/swipe-text.png') url('../img/top-dew.png') url('../img/ray.png');
+    content: url('../img/bg.jpg') url('../img/bg2.jpg') url('../img/bottom-dew.png') url('../img/button.png') url('../img/dew-bottle.png') url('../img/halk.png') url('../img/hand.png') url('../img/men-line.png') url('../img/men-line3.png') url('../img/middle-dew.png') url('../img/swipe-text.png') url('../img/top-dew.png') url('../img/ray.png') url('../img/psmoke.png');
     display: none;
 }
+
 #rma-widget {
     width: 320px;
     height: 480px;
@@ -350,58 +351,18 @@ body:after {
 .halk1{
     opacity: 0;
     z-index: 999;
-    transform: scale(0.2,0.2);
-    -webkit-animation: 6s halk forwards;
-    -webkit-animation-name: halk;
-    -moz-animation-name:  halk;
-    -o-animation-name:  halk;
-    animation-name:  halk;
-    -moz-animation-duration: 4.5s;
-    -ms-animation-duration: 4s;
-    -o-animation-duration: 5s;
-    webkit-animation-duration: 4s;
-    animation-duration: 4.5s;
-    -webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: 3s halk forwards 0.2s;
+    animation: 3s halk forwards 0.2s;
+
 }
 
 @-webkit-keyframes halk {
-    0%   {opacity: 0; bottom:100px; z-index: 999;transform: scale(0.2,0.2) rotate( 300deg); }
-    15%   {opacity: 0.8;bottom:100px; z-index: 999;transform: scale(0.4,0.4) rotate( 0deg);}
-    40% {opacity: 0.9;bottom:50px; z-index: 999;transform: scale(1.1,1.1);}
-    100%{opacity:1; z-index: 999;transform: scale(1,1);}
-}
-@-webkit-keyframes halk {
-    0%   {transform: scale(1.2,1.2);}
-    20%   {transform: scale(0.8,0.8);}
-    40% {transform: scale(1.1,1.1);}
-    100%{transform: scale(1,1);}
-}
-@-moz-keyframes halk {
-    0%   {opacity: 0; z-index: 999;}
-    20%   {opacity: 0.2; z-index: 999;}
-    40% {opacity: 0.5; z-index: 999;}
-    100%{opacity:1; z-index: 999;}
-}
-@-o-keyframes halk {
-    0%   {opacity: 0; z-index: 999;}
-    20%   {opacity: 0.2; z-index: 999;}
-    40% {opacity: 0.5; z-index: 999;}
-    100%{opacity:1; z-index: 999;}
-}
-@-ms-keyframes halk {
-    0%   {opacity: 0; z-index: 999;}
-    20%   {opacity: 0.2; z-index: 999;}
-    40% {opacity: 0.5; z-index: 999;}
-    100%{opacity:1; z-index: 999;}
+    0%   {opacity: 0; z-index: 999;  }
+    100%{opacity:1; z-index: 994;}
 }
 @keyframes halk {
-    0%   {opacity: 0; bottom:100px; z-index: 999;transform: scale(0.2,0.2) rotate( 300deg); }
-    15%   {opacity: 0.8;bottom:100px; z-index: 999;transform: scale(0.4,0.4) rotate( 0deg);}
-    40% {opacity: 0.9;bottom:50px; z-index: 999;transform: scale(1.1,1.1);}
-    100%{opacity:1; z-index: 999;transform: scale(1,1);}
+    0%   {opacity: 0; z-index: 999;  }
+    100%{opacity:1; z-index: 994;}
 }
 
 .top-dew{
@@ -506,91 +467,59 @@ body:after {
     text-align: center;
     bottom: -120px;
 }
-.ray{
-    position:absolute;
-    width:100%;
-    top:50%;
-    transform: scale(0,0);
-    transition: 0.5s;
-    z-index: 990;
-
-}
 
 
-.smoke1 {
-    height: 350px;
-    width: 250px;
+.smoke2{
+    transform: scale(0.8,0.8);
     position: absolute;
-    z-index: 999;
-    bottom:0;
-    margin:auto;
-}
-
-.smoke1 .s1,
-.smoke1 .s2,
-.smoke1 .s3,
-.smoke1 .s4 {
-    position: absolute;
-    width: 100%;
-    height: 350px;
-    bottom: -250px;
     opacity: 0;
-    -webkit-animation: smoke  5s infinite,
-    smoke-opacity 5s infinite cubic-bezier(.45,.28,.63,.69);
-    -moz-animation: smoke  6s infinite cubic-bezier(.45,.28,.63,.69),
-    smoke-opacity 6s infinite cubic-bezier(.45,.28,.63,.69);
-    -ms-animation: smoke  6s infinite cubic-bezier(.45,.28,.63,.69),
-    smoke-opacity 6s infinite cubic-bezier(.45,.28,.63,.69);
-    -o-animation: smoke  6s infinite cubic-bezier(.45,.28,.63,.69),
-    smoke-opacity 6s infinite cubic-bezier(.45,.28,.63,.69);
-    animation: smoke  5s infinite cubic-bezier(.45,.28,.63,.69),
-    smoke-opacity 5s infinite cubic-bezier(.45,.28,.63,.69); }
+    z-index: 0;
+    bottom:20px;
+}
+.smoke3{
+    -webkit-animation: 4.5s smoke2 forwards 0.5s;
+    animation: 6.5s smoke2 forwards 0.5s;
+    position: absolute;
+    opacity: 0;
+    z-index: 9995;
+}
+@-webkit-keyframes smoke2 {
+    0% {
+        -webkit-transform: scale(0.8,0.8);
+        opacity: 0.5;
+    }
+    50% {
 
-.smoke1 .s1,
-.smoke1 .s3 { background:transparent url("../img/sm1.png") no-repeat center top; }
+    }
+    80% {  -webkit-transform: scale(2,2);
+        opacity: 1;}
+    100% {  -webkit-transform: scale(2,2);
+        opacity: 0;}
+}
+@-moz-keyframes smoke2 {
+    0% {
+        -moz-transform: scale(0.8,0.8);
+        opacity: 0.5;
+    }
+    50% {
 
-.smoke1 .s4, .smoke1 .s2{ background:transparent url("../img/sm11.png") no-repeat center top; }
-
-
-.smoke1 .s2 {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -ms-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s; }
-
-.smoke1 .s3 {
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    -ms-animation-delay: 1.5s;
-    -o-animation-delay: 1.5s;
-    animation-delay: 1.5s; }
-
-.smoke1 .s4 {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s; }
-
-
-@keyframes smoke {
-    0% { transform: translateY( -0% ); }
-    100% { transform: translateY( -150% ); }
+    }
+    80% {  -moz-transform: scale(2,2);
+        opacity: 1;}
+    100% {  -moz-transform: scale(2,2);
+        opacity: 0;}
 }
 
-@-webkit-keyframes smoke {
-    0% { -webkit-transform: translateY( -0% ); }
-    100% { -webkit-transform: translateY( -150% ); }
-}
+@keyframes smoke2 {
+    0% {
+        transform: scale(0.8,0.8);
+        opacity: 0.5;
+    }
+    50% {
 
-
-@keyframes smoke-opacity {
-    0% {  opacity:1;}
-    100% { opacity:0; transition: 1s;}
-}
-
-@-webkit-keyframes smoke-opacity {
-    0% {  opacity:1; }
-    100% { opacity:0; }
+    }
+    80% {  transform: scale(2,2);
+        opacity: 1;}
+    100% {  transform: scale(2,2);
+        opacity: 0;}
 }

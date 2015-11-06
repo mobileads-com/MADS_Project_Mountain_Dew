@@ -320,30 +320,27 @@ $(document).ready(function(){
     $("#redux").eraser({
         completeRatio: .35,
         completeFunction: function(){
-
+            $(".hand").hide();
             $( "#redux" ).hide();
             $( ".men-line2" ).css({
                 "z-index":"0"
             });
-            $(".smoke").addClass("smoke1");
+            $(".smoke2").addClass("smoke3");
             setTimeout(function() {
                 $(".halk0").addClass("halk1");
-            }, 3000);
-            
-
-            setTimeout(function() {
-                $(".smoke1").css({
-                    "opacity": "0",
-                    "transition-duration": "0.5s"
-                });
-            }, 3000);
-            
+            }, 2700);
             setTimeout(function(){
                 $( ".men-line2" ).css({
-                    "opacity":"0",
-                    "transition": "0.8s"
+                    "opacity": "0",
+                    "transition": "2s"
                 });
-            }, 3200);
+            }, 3000);
+
+            //setTimeout(function(){
+            //    $( ".ray" ).css({
+            //        "transform": "scale(1,1)"
+            //    });
+            //}, 6500);
             setTimeout(function(){
                 $( ".men-line2" ).css({
                     "opacity":"0",
@@ -354,20 +351,17 @@ $(document).ready(function(){
                 });
                 $( ".text-block" ).hide();
 
-                $( ".ray" ).css({
-                    "transform": "scale(1,1)",
-                    "transition-duration": "1.5s"
-                });
-            }, 4800);
+            }, 5500);
+
             setTimeout(function(){
                 $(".top-dew").addClass("topdew2");
-            }, 7000);
+            }, 8500);
             setTimeout(function(){
                 $(".middle-dew").addClass("middle-dew2");
-            }, 7500);
+            }, 9000);
             setTimeout(function(){
                 $(".bottom-dew").addClass("bottom-dew2");
-            }, 8000);
+            }, 9500);
         }
     });
 });
