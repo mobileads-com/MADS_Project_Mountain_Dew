@@ -134,6 +134,15 @@ var testunit = function () {
             <img id="redux" class="canv" src="' + app.path + 'img/men-line.png" /> \
             </div> \
             <img class="men-line2" src="' + app.path + 'img/men-line3.png" alt=""> \
+            <div class="smoke"> \
+            <div class="s1"></div> \
+            <div class="s2"></div> \
+            <div class="s3"></div> \
+            <div class="s4"></div> \
+            <div class="s1"></div> \
+            <div class="s2"></div> \
+            <div class="s3"></div> \
+            </div> \
             <div class="hand"> \
             <img src="' + app.path + 'img/hand.png" alt=""> \
             </div> \

@@ -325,14 +325,25 @@ $(document).ready(function(){
             $( ".men-line2" ).css({
                 "z-index":"0"
             });
-            $(".halk0").addClass("halk1");
+            $(".smoke").addClass("smoke1");
+            setTimeout(function() {
+                $(".halk0").addClass("halk1");
+            }, 3000);
+            
 
+            setTimeout(function() {
+                $(".smoke1").css({
+                    "opacity": "0",
+                    "transition-duration": "0.5s"
+                });
+            }, 3000);
+            
             setTimeout(function(){
                 $( ".men-line2" ).css({
                     "opacity":"0",
                     "transition": "0.8s"
                 });
-            }, 1200);
+            }, 3200);
             setTimeout(function(){
                 $( ".men-line2" ).css({
                     "opacity":"0",
@@ -347,16 +358,16 @@ $(document).ready(function(){
                     "transform": "scale(1,1)",
                     "transition-duration": "1.5s"
                 });
-            }, 2800);
+            }, 4800);
             setTimeout(function(){
                 $(".top-dew").addClass("topdew2");
-            }, 5500);
+            }, 7000);
             setTimeout(function(){
                 $(".middle-dew").addClass("middle-dew2");
-            }, 6000);
+            }, 7500);
             setTimeout(function(){
                 $(".bottom-dew").addClass("bottom-dew2");
-            }, 6500);
+            }, 8000);
         }
     });
 });
