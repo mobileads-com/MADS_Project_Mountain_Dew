@@ -115,7 +115,7 @@ mads.prototype.loadCss = function (href) {
 */
 var testunit = function () {
     var app = new mads();
-
+    var site = false;
     app.loadCss(app.path+'css/style.css');
 
     app.loadJs('https://code.jquery.com/jquery-1.11.3.min.js',function () {
@@ -155,9 +155,17 @@ var testunit = function () {
             <img src="' + app.path + 'img/middle-dew.png" alt=""> \
             </div> \
             <div class="bottom-dew"> \
-            <a href="#"><img src="' + app.path + 'img/button.png" alt=""></a> \
+                <a href="#" class="find-out"></a>\
             </div> \
             </div>';
+
+            // document.querySelector('.find-out').addEventListener('click', function(){
+                // if(!site){
+                //    app.tracker('CTR', 'site');
+                // }
+                // site = true;
+                
+            // });
     }
 
     //app.custTracker = ['http://www.tracker.com?type={{type}}&tt={{tt}}','http://www.tracker2.com?type={{type}}'];
