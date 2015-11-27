@@ -364,6 +364,12 @@ $(document).ready(function(){
             }, 9000);
             setTimeout(function(){
                 $(".bottom-dew").addClass("bottom-dew2");
+                
+                document.getElementById('rma-widget').addEventListener('click', function () {
+                    app.linkOpener('http://dewchallenge.mountaindewmalaysia.com/');
+                    app.tracker('CTR', 'dew_findoutmore');
+                });
+                
             }, 9500);
         }
     });

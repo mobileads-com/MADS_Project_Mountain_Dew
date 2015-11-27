@@ -156,13 +156,10 @@ var testunit = function () {
             <img src="' + app.path + 'img/middle-dew.png" alt=""> \
             </div> \
             <div class="bottom-dew"> \
-                <a href="http://dewchallenge.mountaindewmalaysia.com/" target="_blank" class="find-out"></a>\
+                <div class="find-out"></div>\
             </div> \
             </div>';
 
-        document.querySelector('.find-out').addEventListener('click', function(){
-            app.tracker('CTR', 'dew_findoutmore');
-        });
     }
 
     //app.custTracker = ['http://www.tracker.com?type={{type}}&tt={{tt}}','http://www.tracker2.com?type={{type}}'];
