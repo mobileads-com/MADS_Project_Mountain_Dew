@@ -62,11 +62,11 @@ mads.prototype.tracker = function (tt, type, name, value) {
     * there might have the same type in different location, so it will need the name to differentiate them
     */
     name = name || type; 
-    
+    console.log(type)
     if ( typeof this.custTracker != 'undefined' && this.custTracker != '' && this.tracked.indexOf(name) == -1 ) {
         for (var i = 0; i < this.custTracker.length; i++) {
             var img = document.createElement('img');
-            
+            console.log(type)
             if (typeof value == 'undefined') {
                 value = '';
             }

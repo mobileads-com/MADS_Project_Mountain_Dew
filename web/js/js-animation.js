@@ -321,6 +321,8 @@ $(document).ready(function(){
     $("#redux").eraser({
         completeRatio: .35,
         completeFunction: function(){
+            app.tracker('E', 'dew_swipe');
+            
             $(".hand").hide();
             $( "#redux" ).hide();
             $( ".men-line2" ).css({
@@ -366,9 +368,6 @@ $(document).ready(function(){
         }
     });
     
-    document.getElementById('redux').addEventListener('click', function () {
-        app.tracker('E', 'dew_swipe');
-    });
     
 });
 (function() {
