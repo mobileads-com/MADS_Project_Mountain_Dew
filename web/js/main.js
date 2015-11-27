@@ -159,13 +159,12 @@ var testunit = function () {
             </div> \
             </div>';
 
-            // document.querySelector('.find-out').addEventListener('click', function(){
-                // if(!site){
-                //    app.tracker('CTR', 'site');
-                // }
-                // site = true;
-                
-            // });
+            document.querySelector('.find-out').addEventListener('click', function(){
+                if(!site){
+                   app.tracker('CTR', 'dew_findoutmore');
+                }
+                site = true;
+            });
     }
 
     //app.custTracker = ['http://www.tracker.com?type={{type}}&tt={{tt}}','http://www.tracker2.com?type={{type}}'];
