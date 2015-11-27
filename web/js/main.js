@@ -113,8 +113,9 @@ mads.prototype.loadCss = function (href) {
 * Unit Testing for mads 
 *
 */
+var app = new mads();
 var testunit = function () {
-    var app = new mads();
+    
     var site = false;
     app.loadCss(app.path+'css/style.css');
 
@@ -159,12 +160,9 @@ var testunit = function () {
             </div> \
             </div>';
 
-            document.querySelector('.find-out').addEventListener('click', function(){
-                if(!site){
-                   app.tracker('CTR', 'dew_findoutmore');
-                }
-                site = true;
-            });
+        document.querySelector('.find-out').addEventListener('click', function(){
+            app.tracker('CTR', 'dew_findoutmore');
+        });
     }
 
     //app.custTracker = ['http://www.tracker.com?type={{type}}&tt={{tt}}','http://www.tracker2.com?type={{type}}'];

@@ -317,6 +317,7 @@ $(document).ready(function(){
         });
     });
 
+    
     $("#redux").eraser({
         completeRatio: .35,
         completeFunction: function(){
@@ -364,6 +365,11 @@ $(document).ready(function(){
             }, 9500);
         }
     });
+    
+    document.getElementById('redux').addEventListener('click', function () {
+        app.tracker('E', 'dew_swipe');
+    });
+    
 });
 (function() {
 
