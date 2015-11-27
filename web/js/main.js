@@ -156,7 +156,7 @@ var testunit = function () {
             <img src="' + app.path + 'img/middle-dew.png" alt=""> \
             </div> \
             <div class="bottom-dew"> \
-                <a href="#" class="find-out"></a>\
+                <a href="http://dewchallenge.mountaindewmalaysia.com/" target="_blank" class="find-out"></a>\
             </div> \
             </div>';
 
